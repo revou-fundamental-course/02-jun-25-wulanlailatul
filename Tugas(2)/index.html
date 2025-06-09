@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile Website</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/ut.jpg" alt="Logo Sekolah" />
+    </div>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>My Profile</li>
+        <li>Achievement</li>
+        <li>Message Us</li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="boxed-section">
+    <h1>Hi RevoUners, Welcome To Website</h1>
+    <p>Ini adalah website latihan pertama</p>
+    <div class="header-image">
+      <img src="img/astra.jpg" alt="Foto Sekolah" />
+    </div>
+  </section>
+
+  <section class="facility-list boxed-section">
+    <div class="facility">
+      <img src="img/facility1.png" alt="Facility 1" />
+    </div>
+    <div class="facility">
+      <img src="img/facility2.png" alt="Facility 2" />
+    </div>
+    <div class="facility">
+      <img src="img/facility3.png" alt="Facility 3" />
+    </div>
+  </section>
+
+  <section class="contact boxed-section">
+    <h2>Message Us</h2>
+    <div class="form-output-wrapper">
+      <form onsubmit="return handleSubmit()">
+        <div class="form-group">
+          <label for="name">Nama</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="form-group">
+          <label for="birthdate">Tanggal Lahir</label>
+          <input type="date" id="birthdate" />
+        </div>
+        <div class="form-group">
+          <label>Jenis Kelamin</label>
+          <div class="radio-group">
+            <label><input type="radio" name="gender" value="Laki-laki" /> Laki-laki</label>
+            <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="messageText">Pesan</label>
+          <textarea id="messageText"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Kirim</button>
+      </form>
+      <div class="output" id="outputBox">
+        Output pesan akan muncul di sini...
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Wulan Lailatul Mufidah</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
